@@ -1,0 +1,12 @@
+void main() {
+  String nome = funcao(1) ?? 'Não informado';
+  print(nome.toUpperCase());
+}
+
+// String funcao() => 'Joao'.toUpperCase();
+
+String? funcao(int x) { // funcao nullable
+  if (x > 10) {
+    return 'Ola mundo!';  
+  }
+}
