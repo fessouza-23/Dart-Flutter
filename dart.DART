@@ -7,11 +7,11 @@ void saudacoes(
   bool mostrarAgora = true,
   String? cliente,
 }) {
-  print('Saudações do $nome');
+  print('Saudações do ${nome.toUpperCase()}');
   
-  if (cliente != null) {
-    print('Seja bem-vindo(a), $cliente!');
-  }
+  String c = cliente ?? 'Não informado'; // null aware -> determina um valor padrão caso a variavel seja null
+  
+  print('Seja bem-vindo(a), ${c.toUpperCase()}!');
 
   if (mostrarAgora) {
     print('Agora: ${agora()}');
