@@ -1,5 +1,5 @@
 void main() {
-  saudacoes('Joao');
+  saudacoes('Joao', corpo: func);
   funcao('A', null, c: null, d: 'teste', e: null);
 }
 
@@ -7,8 +7,11 @@ void saudacoes(
   String nome, {
   bool mostrarAgora = true,
   String? cliente,
+  required Function(int) corpo,
 }) {
   print('Saudações do ${nome.toUpperCase()}');
+  
+  corpo(5);
   
   String c = cliente ?? 'Não informado'; // null aware -> determina um valor padrão caso a variavel seja null
   
@@ -34,5 +37,10 @@ void funcao(
     String f = 'qwe', // parametro opional non-nullable nomeado
   }
 ) {
-  
+}
+
+void func(int i) {
+  for (int j = 1; j <= i; j++) {
+    print('Ola $j');
+  }
 }
