@@ -5,7 +5,7 @@ void main() {
 void saudacoes(
   String nome, {
   bool mostrarAgora = true,
-  String? cliente,
+  String? cliente, // ? em frente ao tipo de variavel mostrar que esta variavel possuíra valor NULL por padrão
 }) {
   print('Saudações do $nome');
   
