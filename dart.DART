@@ -5,11 +5,13 @@ void main() {
 void saudacoes(
   String nome, {
   bool mostrarAgora = true,
-  String? cliente, // ? em frente ao tipo de variavel mostrar que esta variavel possuíra valor NULL por padrão
+  String? cliente,
 }) {
   print('Saudações do $nome');
   
-  print('Seja bem-vindo(a), $cliente!');
+  if (cliente != null) {
+    print('Seja bem-vindo(a), $cliente!');
+  }
 
   if (mostrarAgora) {
     print('Agora: ${agora()}');
