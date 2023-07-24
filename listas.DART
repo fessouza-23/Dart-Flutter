@@ -15,8 +15,11 @@ void main() {
     23
   ];
   
-  print(nomes);
-  print(values);
   print(values.length);
-  print(nomes[3]);
+  values.add(2323);
+  values.addAll([1, 2, 3, 4, 5, 6]);
+  values.insert(0, 0);
+  print(values.contains(23));
+  print(values.indexOf(23));
+  values.clear();
 }
