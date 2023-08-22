@@ -34,7 +34,7 @@ void funcao(
     String? c = 'abc', // parametro opcional nullable nomeado
     required String d, // parametro obrigatorio non-nullable nomeado
     required String? e, // parametro obrigadotio nullable nomeado
-    String f = 'qwe', // parametro opional non-nullable nomeado
+    String f = 'qwe', // parametro opcional non-nullable nomeado
   }
 ) {
 }
